@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 1em/1.6 sans-serif;
+  background-color: #ccc;
+}
+
+input,
+button,
+select {
+  font: inherit;
+  padding: 0.25em 0.5em;
+  line-height: 1;
+}
+
+.App {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.form {
+  background-color: #fff;
+  padding: 1.5em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.5em hsl(0 0% 0% / 25%);
+}
+
+.form-field {
+  width: 100%;
+  max-width: 300px;
+}
+
+.form-action {
+  padding-inline: 1em;
+}
+
+.form-row + .form-row {
+  margin-top: 1em;
+}
+
+.form-msg {
+  font-size: 0.75em;
+  color: orangered;
+  margin-top: 0.5em;
+}
